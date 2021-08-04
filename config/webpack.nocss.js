@@ -37,9 +37,10 @@ multiconfig.forEach(config => {
   config.module = {
     rules: [
       {
-        exclude: /node_modules/,
+        exclude: path.resolve("./node_modules/"),
         test: /\.ts?$/,
         loader: 'ts-loader',
+        options: { allowTsInNodeModules: true },
       },
       {
         test: /\.scss$/,
