@@ -23,6 +23,7 @@ interface ILPOptionTooltip {
 }
 
 export interface ILPConfiguration {
+  ui: HTMLElement | null;
   element: HTMLElement | HTMLInputElement;
   elementEnd?: HTMLElement | HTMLInputElement | null;
   parentEl?: HTMLElement | null;
