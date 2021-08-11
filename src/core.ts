@@ -17,7 +17,6 @@ export class LPCore extends EventEmitter {
   protected readonly pluralSelector: (arg: number) => string;
 
   protected options: ILPConfiguration = {
-    ui: null,
     element: null,
     elementEnd: null,
     parentEl: null,
